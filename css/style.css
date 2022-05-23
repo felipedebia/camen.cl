@@ -1,8 +1,42 @@
 .img-logo{
     width: 200px;
 }
+
+.font-texto{
+    font-size: 18px;
+}
+
+.carrusel-mode{
+    width: 100%;
+}
+
 @media (min-width: 760px) { 
     .img-logo{
         width: 450px;
     }
+    .font-texto{
+        font-size: 32px;
+    }
+    .carrusel-mode{
+        width: 90%;
+    }
+    
+}
+
+
+
+.button {
+	margin: 10px auto;
+	border: 1px solid rgba(0,0,0,0.4) ;
+    border-radius: 10px;
+}
+
+.orange{
+    background: #fc7e2f;
+}
+
+.action {
+	padding: 0 10px;
+	float: left;
+	color: #fff;
 }
