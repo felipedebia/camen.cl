@@ -1,9 +1,8 @@
-.megamenu {
-    position: static;
+.img-logo{
+    width: 200px;
 }
-
-.megamenu .dropdown-menu {
-    background: none;
-    border: none;
-    width: 100%;
+@media (min-width: 760px) { 
+    .img-logo{
+        width: 450px;
+    }
 }
