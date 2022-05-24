@@ -36,7 +36,52 @@
 }
 
 .action {
-	padding: 0 10px;
+	padding: 0 20px;
 	float: left;
 	color: #fff;
 }
+
+.texto-align-center {
+    height: auto;
+    width: 100%;
+    padding: 50px 50px;
+    background: #fc7e2f;
+    border: 1px solid rgba(0,0,0,0.4) ;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+  }
+
+  .margin-caja-top{
+      margin-top: 30px;
+      margin-bottom: 20px;
+  }
+
+
+  .texto-align-infor {
+    font-size: 90px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .texto-title {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .padd{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .texto-p {
+    width: 30%;
+    padding: 50px 50px;
+    background: #fc7e2f;
+    border: 1px solid rgba(0,0,0,0.4) ;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+  }
