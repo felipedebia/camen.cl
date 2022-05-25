@@ -299,3 +299,77 @@
     justify-content: center;
     text-align: center;
 }
+
+
+
+/* Estilos pagina Cotiza */
+
+.caja-principal-cotiza1{
+    width: 30%;
+    background: #fff;
+    border: 1px solid black;
+}
+
+.caja-principal-cotiza2{
+    width: 30%;
+    background: #fc7e2f;
+    border: 1px solid black;
+}
+
+
+
+.titulo-principal-cotiza1{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.titulo-principal-cotiza2{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.texto-titulo1{
+    text-align: center;
+    font-size: 40px;
+    color: #fc7e2f;
+}
+
+.texto-titulo2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+
+
+.cuadro-empresa-cotizar1{
+    margin-left: 20px;
+    font-size: 10px;
+    color: black;
+    width: 60%;
+}
+
+.texto-cuadro-empresa1{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.cuadro-empresa-cotizar2{
+    margin-left: 20px;
+    font-size: 10px;
+    color: white;
+    width: 60%;
+}
+
+
+.texto-cuadro-empresa2{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.espacio-cotizacion{
+    margin-bottom: 20px;
+}
