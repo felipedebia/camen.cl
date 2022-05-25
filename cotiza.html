@@ -53,6 +53,15 @@
                                 placeholder="Calle falsa 123, Comuna Falsa" required>
                         </div>
 
+                        <div class="form-group cuadro-empresa-cotizar1">
+                            <label class="texto-cuadro-empresa1" for="exampleFormControlSelect1">¿Tipo de Servicio?</label>
+                            <select class="form-control espacio-cotizacion" name="requiere-factura">
+                                <option>Camiones</option>
+                                <option>Logística</option>
+                                <option>Última Milla</option>
+                            </select>
+                        </div>
+
 
                         <div class="form-group cuadro-empresa-cotizar1">
                             <label class="texto-cuadro-empresa1" for="exampleFormControlInput1">Pagina Web</label>
@@ -108,19 +117,23 @@
 
 
 
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center" style="margin-top: 50px;">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
                             <input type="hidden" name="_subject" value="Contacto via web!">
+
                             <button type="submit" class="btn px-5 py-2 d-flex justify-content-center align-items-center"
-                                style="background: white; margin-right: 20px; margin-bottom: 20px;">
-                                <label style="font-size:18px; font-weight: 600;">Volver</label>
-                                
+                                style="background: white; margin-right: 20px; margin-bottom: 20px; font-size:18px; font-weight: 600;"
+                                onclick="window.location.href='/index.html'">
+                                Volver          
                             </button>
+
+
+
+
                             <button type="submit" class="btn px-5 py-2 d-flex justify-content-center align-items-center"
-                                style="background: white; margin-bottom: 20px;">
-                                <label style="font-size:18px; font-weight: 600;">Registrar</label>
-                                
+                                style="background: white; margin-bottom: 20px; font-size:18px; font-weight: 600;">
+                                Registrar
                             </button>
                         </div>
 
