@@ -35,6 +35,9 @@
     margin-left: 0;
     margin-right: 0;
 }
+.formulario-contenedor{
+    width: 90%;
+}
 @media (min-width: 760px) {
     .img-logo {
         width: 450px;
@@ -149,4 +152,23 @@
 .caja-servicios2 img{
     height: 200px;
     width: 250px;
+}
+.formulario{
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
+.texto-formulario{
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer-web{
+    width: 90%;
+    background-image: url("/img/entrega.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card-footer-mod{
+    background: transparent;
 }
