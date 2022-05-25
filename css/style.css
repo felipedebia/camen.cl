@@ -172,3 +172,58 @@
 .card-footer-mod{
     background: transparent;
 }
+
+.caja-nosotros{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background: #fc7e2f;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 150px;
+}
+
+.caja-dentro-nosotros{
+    height: auto;
+    padding: 40px;
+    background: #fc7e2f;
+    border: 2px solid #fff;
+}
+
+.titulo-nosotros{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.titulo-dentro-nosotros{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.texto-dentro-nosotros{
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.card-img-nosotros{
+    width: 90%;
+    height: 200px;
+    border: 2px solid rgba(104, 98, 98, 0.4);
+}
+
+.caja-footer{
+    height: auto;
+    padding: 40px;
+    background: transparent;
+    border-right: 3px solid #fc7e2f; 
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    text-align: center;
+}
