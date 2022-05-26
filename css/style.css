@@ -115,7 +115,40 @@
     margin: 0 20px;
     width: 100%;
 }
+.btn-login{
+    background: #fc7e2f;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 60px 5px 60px;
+    border-radius: 15px;
+    border: 1px solid rgba(124, 117, 117, 0.4);
+    
+}
+.txt-tamano-login{
+    color: #6B6B6C !important;
+    font-size: 15px;
+}
+.txt-titulo-login{
+    color: black;
+    font-size: 30px;
+
+}
 @media (min-width: 760px) {
+    .txt-titulo-login{
+        color: black;
+        font-size: 50px;
+    
+    }
+    .txt-tamano-login{
+        color: #6B6B6C !important;
+        font-size: 25px;
+    }
+    .btn-login{
+        font-size: 35px;
+        padding: 3px 30px;
+        
+    }
     .cuadro-login{
         width: 80%;
     }
@@ -440,11 +473,7 @@
 }
 
 
-.txt-titulo-login{
-    color: black;
-    font-size: 50px;
 
-}
 
 .txt-volver-login{
     color: #6B6B6C !important;
@@ -474,15 +503,5 @@
     color: #6B6B6C !important;
 }
 
-.btn-login{
-    background: #fc7e2f;
-    color:#fff;
-    margin-bottom: 20px;
-    font-size: 45px;
-    font-weight: 600;
-    padding: 5px 120px 5px 120px;
-    border-radius: 15px;
-    border: 1px solid rgba(124, 117, 117, 0.4);
-    
-}
+
 
