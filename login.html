@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es">
-
 <head>
     <!-- Etiquetas <meta> obligatorias para Bootstrap -->
     <meta charset="utf-8">
@@ -14,12 +13,10 @@
     <link rel="icon" type="image/x-icon" href="./img/logo-fav.ico">
     <title>Transportes Camen | Login </title>
 </head>
-
 <body>
-
     <div class="w-100">
-        <div class="d-flex my-5 mx-auto" style="padding-top: 50px; width: 80%;">
-            <div class="ocultar-div d-flex me-5 my-5 align-items-end" style="width: 40%;">
+        <div class="d-flex my-2 mx-auto contenedor-login">
+            <div class="ocultar-div me-5 align-items-end">
                 <div class="d-block">
                     <div>
                         <a class="navbar-brand">
@@ -27,73 +24,64 @@
                                 alt="">
                         </a>
                     </div>
-                    
                     <div class="link text-center txt-volver-login" >
                         <i class="bi bi-arrow-left-circle-fill" style="color: #fc7e2f;"></i>
                        <a class="link txt-volver-login" href="./index.html">Volver</a> 
                     </div>  
                 </div>
             </div>
-            
-            <div class="my-5" style="width: 45%;">
-                <div>
-                    <div class="">
-                        <div class="link text-center txt-volver-login" >
-                            <i class="bi bi-arrow-left-circle-fill" style="color: #fc7e2f;"></i>
-                           <a class="link txt-volver-login" href="./index.html">Volver</a> 
-                        </div> 
-                    </div>
-
-                    <div class="align-items-center">
-                        <img src="./img/logo/logo.png" class="d-inline-block align-top img-logo-login2" alt="">
-                    </div>
-                    <div class="pt-3 mb-5">
-                        <h1 class="txt-titulo-login text-center">
-                            Inicio de Sesión
-                        </h1>
-                    </div>
-
-                    <div class="cuadro-login mx-auto">
-                        <div class="mt-4 cajas-de-login">
-                            <div class="txt-caja-login">
-                                Email:
-                            </div>
-                            <div>
-                                <input type="email" class="form-control-lg p-2 form-control espacio-cotizacion" name="apellido"
-                                    placeholder="correo@camen.cl">
-                            </div>
+            <div class="derecha">
+                <div class="ocultar-div2">
+                    <div class="link text-center txt-volver-login" >
+                        <i class="bi bi-arrow-left-circle-fill" style="color: #fc7e2f;"></i>
+                        <a class="link txt-volver-login" href="./index.html">Volver</a> 
+                    </div> 
+                </div>
+                <div class="text-center">
+                    <img src="./img/logo/logo.png" class="d-inline-block align-top img-logo-login2" alt="">
+                </div>
+                <div class="pt-3 mb-5">
+                    <h1 class="txt-titulo-login text-center">
+                        Inicio de Sesión
+                    </h1>
+                </div>
+                <div class="cuadro-login mx-auto">
+                    <div class="mt-4 cajas-de-login">
+                        <div class="txt-caja-login">
+                            Email:
                         </div>
-                        <div class="cajas-de-login pb-4 ">
-                            <div class="txt-caja-login">
-                                Contraseña:
-                            </div>
-                            <div>
-                                <input type="password" class="form-control-lg form-control espacio-cotizacion" name="apellido"
-                                    placeholder="***********">
-                            </div>
+                        <div>
+                            <input type="email" class="form-control-lg p-2 form-control espacio-cotizacion" name="apellido"
+                                placeholder="correo@camen.cl">
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between btn-re-ol mx-auto txt-volver-login">
-                        <div class="w-40">
-                            <a class="link txt-color-login" href="./cotizar.html">Registrarme</a>
+                    <div class="cajas-de-login pb-4 ">
+                        <div class="txt-caja-login">
+                            Contraseña:
                         </div>
-                        <div class="w-40">
-                            <a class="link txt-color-login" href="https://api.whatsapp.com/send?phone=+56953048942&text=Hola,%20necesito%20restablecer%20la%20contrase%C3%B1a%20de%20mi%20usuario,%20mi%20correo%20es:%20%20">Olvide la Contraseña</a>
+                        <div>
+                            <input type="password" class="form-control-lg form-control espacio-cotizacion" name="apellido"
+                                placeholder="***********">
                         </div>
                     </div>
-
-                    <div class="d-flex justify-content-center mt-4">
-                        <button type="submit" class="btn-login btn d-flex justify-content-center align-items-center">
-                            Acceder
-                        </button>
+                </div>
+                <div class="d-flex justify-content-between btn-re-ol mx-auto txt-volver-login">
+                    <div class="w-40">
+                        <a class="link txt-color-login" href="./cotizar.html">Registrarme</a>
                     </div>
+                    <div class="w-40">
+                        <a class="link txt-color-login" href="https://api.whatsapp.com/send?phone=+56953048942&text=Hola,%20necesito%20restablecer%20la%20contrase%C3%B1a%20de%20mi%20usuario,%20mi%20correo%20es:%20%20">Olvide la Contraseña</a>
+                    </div>
+                </div>
 
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn-login btn d-flex justify-content-center align-items-center">
+                        Acceder
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-
-
 </body>
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

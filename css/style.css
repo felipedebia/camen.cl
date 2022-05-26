@@ -86,7 +86,62 @@
     box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
     border-radius: 5px;
 }
+.btn-pag-cotizar{
+    background: #fff;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.ocultar-div{
+    display: none !important;
+}
+.ocultar-div2{
+    display: block !important;
+}
+.derecha{
+    width: 100%;
+}
+.contenedor-login{
+    width: 95%;
+}
+.img-logo-login2 {
+    width: 90%;
+}
+.cuadro-login{
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+    border-radius: 3px;
+    padding-top: 20px;
+    margin: 0 20px;
+    width: 100%;
+}
 @media (min-width: 760px) {
+    .cuadro-login{
+        width: 80%;
+    }
+    .img-logo-login2 {
+        width: 70%;
+    }
+    .contenedor-login{
+        width: 80%;
+    }
+    .derecha{
+        width: 60%;
+    }
+    .ocultar-div{
+        display: block !important;
+        width: 40%;
+    }
+    .ocultar-div2{
+        display: none !important;
+    }
+    .btn-pag-cotizar{
+        background: #fff;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 600;
+    }
     .caja-cotizar-grande{
         width: 60%;
         box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
@@ -163,18 +218,6 @@
         display: flex;
         align-items: center;
         padding: 25px 10px;
-    }
-
-    .ocultar-div{
-        display:none;
-    }
-
-    .btn-pag-cotizar{
-        background: #fff;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        font-size: 1px;
-        font-weight: 600;
     }
 }
 
@@ -389,16 +432,6 @@
     margin-bottom: 20px;
 }
 
-
-.btn-pag-cotizar{
-    background: #fff;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-
 /* Estilos pagina Login */
 
 .img-logo-login1 {
@@ -406,19 +439,6 @@
     margin: auto;
 }
 
-.img-logo-login2 {
-    width: 100%;
-    margin: auto;
-}
-
-.cuadro-login{
-    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
-    border-radius: 3px;
-    padding-top: 20px;
-    margin: 0 20px;
-    width: 80%;
-    
-}
 
 .txt-titulo-login{
     color: black;
@@ -466,6 +486,3 @@
     
 }
 
-.ocultar-div{
-    display:none;
-    }
