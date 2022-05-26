@@ -81,8 +81,17 @@
 .size-titulo {
     font-size: 28px;
 }
-
+.caja-cotizar-grande{
+    width: 100%;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
 @media (min-width: 760px) {
+    .caja-cotizar-grande{
+        width: 60%;
+        box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+        border-radius: 5px;
+    }
     .size-titulo {
         font-size: 36px;
     }
@@ -148,7 +157,7 @@
     .espacio-responsive2 {
         margin-right: 20px !important;
     }
-
+    
     .texto-footer {
         font-size: 1.5em;
         display: flex;
@@ -318,14 +327,15 @@
 
 
 .titulo-principal-cotiza1{
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px !important;
 }
 
 .titulo-principal-cotiza2{
     margin-left: 20px;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .texto-titulo1{
