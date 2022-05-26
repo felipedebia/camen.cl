@@ -308,9 +308,13 @@
 }
 
 
+.caja-cotiza1{
+    background: #fff;
+}
 
-
-
+.caja-cotiza2{
+    background: #fc7e2f;
+}
 
 
 .titulo-principal-cotiza1{
@@ -319,6 +323,7 @@
 }
 
 .titulo-principal-cotiza2{
+    margin-left: 20px;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -327,43 +332,36 @@
     text-align: center;
     font-size: 40px;
     color: #fc7e2f;
+    margin: 0 20px;
 }
 
 .texto-titulo2{
     text-align: center;
     font-size: 40px;
     color: #fff;
+    margin: 0 20px;
 }
 
 
 
 .cuadro-empresa-cotizar1{
     margin: 0 20px;
-    font-size: 10px;
     color: black;
+    font-size: 20px;
+    font-weight: bold;
     text-align: left;
 }
 
-.texto-cuadro-empresa1{
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-}
 
 
 .cuadro-empresa-cotizar2{
-    margin-left: 20px;
-    font-size: 10px;
-    color: white;
-    width: 60%;
-}
-
-
-.texto-cuadro-empresa2{
+    margin: 0 20px;
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
+
+
 
 .espacio-cotizacion{
     margin-bottom: 20px;
