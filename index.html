@@ -11,7 +11,11 @@
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/bootstrap-utilities.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <title>Camen.cl</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo-fav.ico">
+    <link rel="stylesheet" href="./css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/whats2.css">
+    <title>Transportes Camen | Inicio</title>
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -67,6 +71,40 @@
 </head>
 
 <body>
+    <!--Flotante WhatsApp-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="./img/flotante/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+    <script src="./js/script2.js"></script>
+
+
+
     <!--Menu-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-black bg-white" aria-label="Ninth navbar example">
@@ -84,18 +122,20 @@
                 <div class="collapse navbar-collapse " id="navbarsExample07XL">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu-espacio">
                         <li class="nav-item">
-                            <a class="nav-link active texto-menu" aria-current="page" href="">Portal Cliente</a>
+                            <a class="nav-link active texto-menu" aria-current="page" href="https://camen.cl/web/login">Portal Cliente</a>
                         </li>
                         <li class="nav-item dropdown espacio-responsive">
-                            <a class="nav-link dropdown-toggle texto-menu" style="color:black;" href="#" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">Empresa</a>
+                            <a class="nav-link dropdown-toggle texto-menu" style="color:black;" href="#" id="dropdown08"
+                                data-bs-toggle="dropdown" aria-expanded="false">Empresa</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown08">
-                              <li><a class="dropdown-item texto-menu" href="#servicios">Servicio</a></li>
-                              <li><a class="dropdown-item texto-menu" href="#nosotros">Nosotros</a></li>
-                              <li><a class="dropdown-item texto-menu" href="#como">Cómo lo hacemos</a></li>
+                                <li><a class="dropdown-item texto-menu" href="#servicios">Servicio</a></li>
+                                <li><a class="dropdown-item texto-menu" href="#nosotros">Nosotros</a></li>
+                                <li><a class="dropdown-item texto-menu" href="#como">Cómo lo hacemos</a></li>
                             </ul>
-                          </li>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link active texto-menu" aria-current="page" href="./cotiza.html">Cotiza con nosotros</a>
+                            <a class="nav-link active texto-menu" aria-current="page" href="./cotiza.html">Cotiza con
+                                nosotros</a>
                         </li>
 
                     </ul>
@@ -170,7 +210,7 @@
     <div class="container">
         <!--Cotiza con nosotros-->
         <div class="text-center my-3">
-            <button class="button orange" onclick="window.location.href='/cotiza.html'">
+            <button class="button orange" onclick="window.location.href='./cotiza.html'">
                 <div class="d-flex align-items-center action font-texto">
                     <div class="me-2">Cotiza con Nosotros </div>
                     <i class="bi bi-arrow-right-circle"></i>
@@ -338,7 +378,8 @@
                     <input type="hidden" name="_subject" value="Contacto via web!">
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/correo.html">
                     <button type="submit"
-                        class="btn btn-dark text-white orange px-5 py-2 d-flex justify-content-center align-items-center" style="font-size:18px; font-weight: 600;">
+                        class="btn btn-dark text-white orange px-5 py-2 d-flex justify-content-center align-items-center"
+                        style="font-size:18px; font-weight: 600;">
                         Enviar
                         <i class="bi bi-chat-heart ms-2"></i>
                     </button>
@@ -363,7 +404,7 @@
             </div>
         </div>
         <div class="footer-negro text-center pb-4">
-            <img src="/img/logo/blanco.png"><br>
+            <img src="./img/logo/blanco.png"><br>
             <label class="text-white">
                 Transportescamen © 2022. All rights reserved.
             </label>

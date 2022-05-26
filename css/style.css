@@ -71,7 +71,7 @@
 
 .footer-web {
     width: 100%;
-    background-image: url("/img/entrega.png");
+    background-image: url("https://camen.cl/home/camenweb/nueva/img/entrega.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -89,7 +89,7 @@
 
     .footer-web {
         width: 90%;
-        background-image: url("/img/entrega.png");
+        background-image: url("https://camen.cl/home/camenweb/nueva/img/entrega.png");
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -303,18 +303,13 @@
 
 
 /* Estilos pagina Cotiza */
-
-.caja-principal-cotiza1{
-    width: 30%;
-    background: #fff;
-    border: 1px solid black;
+.caja-central-cotizar{
+    width: 80%;
 }
 
-.caja-principal-cotiza2{
-    width: 30%;
-    background: #fc7e2f;
-    border: 1px solid black;
-}
+
+
+
 
 
 
@@ -343,10 +338,10 @@
 
 
 .cuadro-empresa-cotizar1{
-    margin-left: 20px;
+    margin: 0 20px;
     font-size: 10px;
     color: black;
-    width: 60%;
+    text-align: left;
 }
 
 .texto-cuadro-empresa1{
