@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <!-- Etiquetas <meta> obligatorias para Bootstrap -->
     <meta charset="utf-8">
@@ -10,10 +11,39 @@
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/bootstrap-utilities.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/whats.css">
+    <link rel="stylesheet" href="./css/whats2.css">
     <link rel="icon" type="image/x-icon" href="./img/logo-fav.ico">
     <title>Transportes Camen | Cotiza </title>
 </head>
+
 <body>
+    <!--Flotante WhatsApp-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+                <p> <img src="./img/flotante/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+    <script src="./js/script2.js"></script>
+
+    <!--Panel de cotizacion-->
     <div class="w-100">
         <div class="caja-cotizar-grande my-5 mx-auto">
             <div class="card-group">
@@ -29,12 +59,13 @@
                     <form action="https://formsubmit.co/saitamsamot@gmail.com" method="POST">
                         <div class="form-group cuadro-empresa-cotizar1">
                             <label for="exampleFormControlInput1">Razón Social</label>
-                            <input type="text" class="form-control espacio-cotizacion" name="razon-social"
+                            <input type="text" class="form-control espacio-cotizacion" name="razonSocial"
                                 placeholder="Camen Lta">
                         </div>
                         <div class="form-group cuadro-empresa-cotizar1">
                             <div class="text-left" for="exampleFormControlInput1">Rut</div>
-                            <input type="text" class="form-control espacio-cotizacion" name="rut1" placeholder="12123123-1">
+                            <input type="text" class="form-control espacio-cotizacion" name="rutEmpresa"
+                                placeholder="12123123-1">
                         </div>
                         <div class="form-group cuadro-empresa-cotizar1">
                             <label class="text-left" for="exampleFormControlInput1">Dirección de Retiro*</label>
@@ -43,7 +74,7 @@
                         </div>
                         <div class="form-group cuadro-empresa-cotizar1">
                             <label for="exampleFormControlSelect1">¿Tipo de Servicio?*</label>
-                            <select class="form-control espacio-cotizacion" name="requiere-factura">
+                            <select class="form-control espacio-cotizacion" name="requiereFactura">
                                 <option>Camiones</option>
                                 <option>Logística</option>
                                 <option>Última Milla</option>
@@ -51,11 +82,13 @@
                         </div>
                         <div class="form-group cuadro-empresa-cotizar1">
                             <label for="exampleFormControlInput1">Pagina Web</label>
-                            <input type="text" class="form-control espacio-cotizacion" name="web" placeholder="www.camen.cl">
+                            <input type="text" class="form-control espacio-cotizacion" name="web"
+                                placeholder="www.camen.cl">
                         </div>
                         <div class="form-group cuadro-empresa-cotizar1">
                             <label for="exampleFormControlInput1">Instagram</label>
-                            <input type="text" class="form-control espacio-cotizacion" name="instagram" placeholder="@Camen.cl">
+                            <input type="text" class="form-control espacio-cotizacion" name="instagram"
+                                placeholder="@Camen.cl">
                         </div>
                 </div>
                 <div class="card" style="background: #fc7e2f;">
@@ -74,7 +107,8 @@
                     </div>
                     <div class="form-group cuadro-empresa-cotizar2">
                         <label for="exampleFormControlInput1">Rut*</label>
-                        <input type="text" class="form-control espacio-cotizacion" name="rut2" placeholder="12123123-1" required>
+                        <input type="text" class="form-control espacio-cotizacion" name="rutPersonal"
+                            placeholder="12123123-1" required>
                     </div>
                     <div class="form-group cuadro-empresa-cotizar2">
                         <label for="exampleFormControlInput1">Teléfono*</label>
@@ -98,11 +132,15 @@
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_subject" value="Contacto via web!">
-                        <button type="submit" class="btn-pag-cotizar btn px-5 py-2 d-flex justify-content-center align-items-center"
+                        <input type="hidden" name="_next" value="https://camen.cl/home/camenweb/nueva/index.html">
+                        <button type="submit"
+                            class="btn-pag-cotizar btn px-5 py-2 d-flex justify-content-center align-items-center"
                             onclick="window.location.href='./index.html'">
                             Volver
                         </button>
-                        <button type="submit" class="btn-pag-cotizar btn px-5 py-2 d-flex justify-content-center align-items-center">
+                        <button type="submit"
+                            class="btn-pag-cotizar btn px-5 py-2 d-flex justify-content-center align-items-center"
+                            onclick="FunctionMessage()">
                             Registrar
                         </button>
                     </div>
@@ -111,8 +149,10 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/aviso.js"></script>
 </body>
+
 </html>
