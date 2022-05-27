@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <!-- Etiquetas <meta> obligatorias para Bootstrap -->
     <meta charset="utf-8">
@@ -10,10 +11,39 @@
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/bootstrap-utilities.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/whats.css">
+    <link rel="stylesheet" href="./css/whats2.css">
     <link rel="icon" type="image/x-icon" href="./img/logo-fav.ico">
     <title>Transportes Camen | Login </title>
 </head>
+
 <body>
+    <!--Flotante WhatsApp-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+                <p> <img src="./img/flotante/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+    <script src="./js/script2.js"></script>
+    <!--Panel de Login-->
     <div class="w-100">
         <div class="d-flex my-2 mx-auto contenedor-login">
             <div class="ocultar-div me-5 align-items-end">
@@ -24,18 +54,18 @@
                                 alt="">
                         </a>
                     </div>
-                    <div class="link text-center txt-volver-login" >
+                    <div class="link text-center txt-volver-login">
                         <i class="bi bi-arrow-left-circle-fill" style="color: #fc7e2f;"></i>
-                       <a class="link txt-volver-login" href="./index.html">Volver</a> 
-                    </div>  
+                        <a class="link txt-volver-login" href="./index.html">Volver</a>
+                    </div>
                 </div>
             </div>
             <div class="derecha">
                 <div class="ocultar-div2">
-                    <div class="link text-center txt-volver-login" >
+                    <div class="link text-center txt-volver-login">
                         <i class="bi bi-arrow-left-circle-fill" style="color: #fc7e2f;"></i>
-                        <a class="link txt-volver-login" href="./index.html">Volver</a> 
-                    </div> 
+                        <a class="link txt-volver-login" href="./index.html">Volver</a>
+                    </div>
                 </div>
                 <div class="text-center">
                     <img src="./img/logo/logo.png" class="d-inline-block align-top img-logo-login2" alt="">
@@ -51,8 +81,8 @@
                             Email:
                         </div>
                         <div>
-                            <input type="email" class="form-control-lg p-2 form-control espacio-cotizacion" name="apellido"
-                                placeholder="correo@camen.cl">
+                            <input type="email" class="form-control-lg p-2 form-control espacio-cotizacion"
+                                name="apellido" placeholder="correo@camen.cl">
                         </div>
                     </div>
                     <div class="cajas-de-login pb-4 ">
@@ -60,20 +90,22 @@
                             Contraseña:
                         </div>
                         <div>
-                            <input type="password" class="form-control-lg form-control espacio-cotizacion" name="apellido"
-                                placeholder="***********">
+                            <input type="password" class="form-control-lg form-control espacio-cotizacion"
+                                name="apellido" placeholder="***********">
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between btn-re-ol mx-auto txt-volver-login">
                     <div class="w-40">
-                        <a class="link txt-color-login" href="./cotizar.html">Registrarme</a>
+                        <a class="txt-tamano-login link txt-color-login" href="./cotizar.html">Registrarme</a>
                     </div>
+
                     <div class="w-40">
-                        <a class="link txt-color-login" href="https://api.whatsapp.com/send?phone=+56953048942&text=Hola,%20necesito%20restablecer%20la%20contrase%C3%B1a%20de%20mi%20usuario,%20mi%20correo%20es:%20%20">Olvide la Contraseña</a>
+                        <a class="txt-tamano-login link txt-color-login"
+                            href="https://api.whatsapp.com/send?phone=+56953048942&text=Hola,%20necesito%20restablecer%20la%20contrase%C3%B1a%20de%20mi%20usuario,%20mi%20correo%20es:%20%20">Olvide
+                            la Contraseña</a>
                     </div>
                 </div>
-
                 <div class="d-flex justify-content-center mt-4">
                     <button type="submit" class="btn-login btn d-flex justify-content-center align-items-center">
                         Acceder
